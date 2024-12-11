@@ -1,0 +1,227 @@
+.hero{
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../images/face.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:right;
+}
+.welcome{
+  position:absolute;
+  top:40%;
+}
+.display-1{
+  font-size: 4em;
+}
+
+.bg-brown{
+  background-color: #478a6f;
+}
+
+body{
+  background-color:#13daf4f1 ;
+}
+
+nav li a{
+  font-size: 2em;
+  
+}
+
+/* Style rules for main content */
+
+main {
+  padding: 2%;
+  font-family: 'Lato', sans-serif;
+}
+
+.art{
+  padding-top: 30%;
+  margin-left:auto;
+}
+.samples {
+  border: 1px solid #895341;
+  padding: 2%;
+  background: rgba(77, 172, 18, 0.5);
+  box-shadow: 4px 4px 10px #000000f8;
+}
+
+.samples ul {
+  margin-left:4%;
+}
+
+aside{
+  text-align: center;
+  font-size:2em;
+  font-weight:bold;
+  text-shadow: 4px,4px,10px #c5a687;
+}
+aside a{
+  text-decoration: left;
+  font-size:medium;
+}
+
+video{
+  margin: 4% auto 4%,
+}
+
+
+#info ul {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#contact {
+  text-align: center;
+}
+
+.tel-link {
+  background-color: #19142a;
+  padding: 2%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tel-link a {
+  color: #f6eee4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*style rule for form elements*/
+#form{
+  margin-top: 2%;
+  padding: 2%;
+}
+
+#form h2{
+  text-align: center;
+}
+
+fieldset,input,select,textarea{
+  margin-bottom:2% ;
+  
+}
+fieldset legend{
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label{
+  display:block;
+  padding-top: 3%;
+}
+
+
+form #submit{
+  margin:0 auto;
+  border:none;
+  display:block;
+  padding: 1%;
+  background-color:  #5d783a;;
+  color:#f6eee4;
+  font-size: 1.25em;
+  border-radius: 10px;
+}
+form #Reset{
+  margin:0 auto;
+  border:none;
+  display:block;
+  padding: 1%;
+  background-color: #5d783a;
+  color:#f6eee4;
+  font-size: 1.25em;
+  border-radius: 10px;
+}
+
+#questions p {
+  cursor: pointer;
+}
+
+#answer{
+  text-align: center;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#Answer h2{
+  display: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 600px), print {
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+
+section {
+    grid-column: 1 / span 2;
+}
+
+aside{
+    grid-column: 1/span 2;
+}
+
+ 
+ 
+}
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px), print {
+    
+  /* Desktop Viewport: Show desktop class, hide mobile-tablet class */
+  .desktop{
+     display:block;
+  }
+     .mobile{
+         display: none;
+      }
+
+      /* Desktop Viewport: Style rules for nav area */
+      nav li a:link {
+        color: #fff;
+    }
+    
+    nav li a:hover {
+        color: #74a9be;
+    }
+    
+    nav li a:active {
+        color: #8cb3d9;
+    }
+       /* Desktop Viewport: Style rules for main content */
+    main {
+      overflow: auto;
+  }
+  
+  figure {
+      max-width: 460px;
+  }
+  
+  aside{
+      grid-column: 1/span 3;
+      font-size: 2em;
+  }
+ 
+ /* Desktop viwport: style rules for form elements*/
+ form{
+  width:auto
+}
+.form-grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap:20px;
+
+}
+
+
+.btn{
+  grid-column: 1/span 2;
+}
+
+aside{
+  grid-column: 1/span 3;
+  font-size: 2em;
+}
+
+}
