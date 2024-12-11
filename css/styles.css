@@ -38,7 +38,7 @@ main {
 }
 .samples {
   border: 1px solid #895341;
-  padding: 2%;
+  /*padding: 2%;*/
   background: rgba(77, 172, 18, 0.5);
   box-shadow: 4px 4px 10px #000000f8;
 }
@@ -51,7 +51,7 @@ aside{
   text-align: center;
   font-size:2em;
   font-weight:bold;
-  text-shadow: 4px,4px,10px #c5a687;
+  text-shadow: 4px 4px #c5a687;
 }
 aside a{
   text-decoration: left;
@@ -59,7 +59,8 @@ aside a{
 }
 
 video{
-  margin: 4% auto 4%,
+  margin: 4% auto 4%;
+
 }
 
 
@@ -146,24 +147,42 @@ form #Reset{
   display: none;
 }
 
-/* Media Query for Tablet Viewport */
-@media screen and (min-width: 600px), print {
 
+@media screen and (min-width:600px){
   .grid {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 20px;
-}
-
-section {
+  }
+  
+  section {
     grid-column: 1 / span 2;
-}
-
-aside{
+  }
+  
+  aside{
     grid-column: 1/span 2;
+  }
+  
 }
+/* Media Query for Tablet Viewport */
+@media screen and (max-width: 600px), print {
 
- 
+  video{
+    width: 250px;
+  }
+
+  .art{
+    width: 70%;
+  }
+
+  aside{
+    position: relative;
+    right: 50%;
+  }
+
+  .grid{
+    max-width: 450px;
+  }
  
 }
 /* Media Query for Desktop Viewport */
@@ -223,5 +242,7 @@ aside{
   grid-column: 1/span 3;
   font-size: 2em;
 }
+
+
 
 }
